@@ -1,0 +1,8 @@
+name: clearchat
+version: 1.0
+main: xyz.banthatloser.clearchat.clearchat
+description: simple two class clearchat plugin
+author: banthatloser - github.banthatloser.xyz
+commands:
+  clearchat:
+    aliases: [cc]
