@@ -15,7 +15,7 @@ public class clearchat
         if (!(s instanceof Player))
         {
             s.sendMessage(ChatColor.RED + "You must be a player to do this.");
-            return true;
+            return false;
         }
         Player p = (Player)s;
         if (cmd.getName().equalsIgnoreCase("clearchat"))
@@ -29,7 +29,7 @@ public class clearchat
                 }
                 Bukkit.broadcastMessage(ChatColor.GRAY + "Chat cleared by" + ChatColor.RED + p.getName());
                 return true;
-            }
+            } 
             p.sendMessage(ChatColor.RED + "You dont have permissions!");
         }
         return false;
